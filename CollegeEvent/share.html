@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <style>
+      body {
+      background-color: #e8f0fe;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #007bff;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #f7efef;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #f0e6e6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #ffffd2;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #add8e6;
+      border-color: #add8e6;
+      color: #131212;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    a {
+      color: #e3e3e3 ;
+      text-decoration: none;
+      background-color: transparent;
+
+    }
+
+    .connect-section{
+    margin-top: 26px;
+}
+
+ 
+    .social-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+    font-size: 30px;
+    color: #b6abab;
+    
+    border-radius: 20px;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.30s;
+
+    max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 50px;
+    
+}
+
+.social-icons a:hover{
+    transform: scale(1.2);
+}
+
+  
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        background-color: #add8e6;
+        color: #131212;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+      }
+  
+    
+  
+        a:link {color: #0e0d0d;}
+        a:visited {color: #0a0a0a;}
+        a:hover {color: #0a0a0a;}
+        a:active {color: #0a0a0a;}
+
+        .modal-content {
+            margin-top: 30px;
+        }
+
+        #event-results {
+      margin-top: 20px;
+    }
+    
+    #navbar {
+      background-color: #add8e6;
+      color: #141313;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    /* Navbar */
+/* Navbar */
+#navbar {
+  margin-top: 0; /* Remove margin from the top */
+  background-color: #add8e6; /* Change this to desired background color */
+  padding-left: 0; /* Remove padding from the left */
+}
+
+/* Remove bullet points from navbar items */
+.navbar-dark .navbar-nav .nav-link {
+  color: black; /* Change this to desired text color */
+  padding: 0.7rem 0.5rem;
+  /* text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  list-style-type: none; Remove bullet points */
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white; /* Change this to desired active/hover text color */
+}
+
+/* Remove margin from navbar items */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0; /* Remove margin from the top */
+  padding-left: 0; /* Remove padding from the left */
+}
+
+
+
+.nav-link {
+  display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 0.5rem; /* Adjust spacing for mobile */
+  }
+}
+
+
+
+        
+    </style>
+
+    <title>Event</title>
+</head>
+<body>
+
+     <nav id="navbar" class=" navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <div class="nav-item">
+              <a class="nav-link active" href="EventExploration4.html">Event Exploration</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="EventCreation4.html">Event Creation</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="EventDiscovery4.html">Event Discovery</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="my-profile.html">User Information</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+  
+    <!-- Sharing Options -->
+    <div id="sharing-options" class="modal">
+        <div class="modal-content">
+         
+            <h2>Share Event</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://www.wordpress.com" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                <a href="https://www.github.com" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+</div>
+            
+    </div>
+
+    <footer class="footer">
+        &copy; 2023 College Events Manager. All rights reserved.
+      </footer>
+
+</body>
+</html>
+
